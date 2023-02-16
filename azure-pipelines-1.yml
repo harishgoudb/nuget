@@ -4,7 +4,10 @@
 # https://aka.ms/yaml
 
 trigger:
-- main
+
+- master
+pool: 
+  vmImage: 'harish-devops-a'
 steps:
 - task: JFrogNuGet@1
   inputs:
