@@ -12,3 +12,4 @@ steps:
     artifactoryConnection: 'hts2v2artifactory'
     targetResolveRepo: 'nuget-virtual'
     solutionPath: '**/*.sln'
+    packagesDirectory: 'E:\Cache\NugetPackages'
