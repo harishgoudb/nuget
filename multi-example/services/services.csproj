@@ -49,12 +49,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference> Include="">
-      <Version>=xxxx<?version>
+    <PackageReference> Include="MyLogger">
+      <Version>=1.0.0.0<?version>
     </Packagereference>
-    <PackageReference> Include="">
-      <Version>=xxxx<?version>
-    </Packagereference>
+    <PackageReference> Include="Ninject">
+      <Version>=3.0.1.10</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
