@@ -52,7 +52,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <Packagereference Include="MyLogger"> 
+      <Version=1.0.0.0</Version>
+    </PackageReference>
+    <Packagereference Include="Newtonsoft.Json"> 
+      <Version=4.5.11</Version>
+    </PackageReference>
+    <Packagereference Include="Ninject"> 
+      <Version=3.0.1.10</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
