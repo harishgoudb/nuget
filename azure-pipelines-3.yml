@@ -23,4 +23,4 @@ steps:
     buildName: '$(Build.DefinitionName)'
     buildNumber: '$(Build.BuildNumber)'
     includeEnvVars: true
-    packagesDirectory: '
+    packagesDirectory: 'E:\Cache\NugetPackages'
