@@ -6,6 +6,13 @@
 trigger:
 - main
 steps:
+- task: NuGetCommand@2
+  inputs:
+    command: 'restore'
+    restoreSolution: '**/*.sln'
+    feedsToUse: 'select'
+    vstsFeed: 'a423bb44-2fd8-48cc-a7da-cea6ac2452a9'
+    restoreDirectory: 'E:\Cache\NugetPackages'
 - task: JFrogNuGet@1
   inputs:
     command: 'restore'
@@ -16,4 +23,4 @@ steps:
     buildName: '$(Build.DefinitionName)'
     buildNumber: '$(Build.BuildNumber)'
     includeEnvVars: true
-    packagesDirectory: 'E:\Cache\NugetPackages'
+    packagesDirectory: '
