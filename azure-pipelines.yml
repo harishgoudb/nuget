@@ -5,10 +5,14 @@
 
 trigger:
 - main
-
-pool:
-  vmImage: 'harish-devops-a'
+steps:
 - task: JFrogNuGet@1
   inputs:
     command: 'restore'
+    artifactoryConnection: 'hts2v2artifactory'
+    targetResolveRepo: 'nuget-virtual'
     solutionPath: '**/*.sln'
+    packagesDirectory: 'E:\Cache\NuGetPackages'
+    collectBuildInfo: true
+    buildName: '$(Build.DefinitionName)'
+    buildNumber: '$(Build.BuildNumber)'
