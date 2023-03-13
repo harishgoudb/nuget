@@ -5,15 +5,13 @@
 trigger:
 - main
 steps:
-- task: ArtifactoryNuGet@2
+- task: JFrogNuGet@1
   inputs:
     command: 'restore'
-    artifactoryService: 'hts-latest'
+    artifactoryConnection: 'hts2v2artifactory'
     targetResolveRepo: 'nuget-virtual'
     solutionPath: '**/*.sln'
     packagesDirectory: 'E:\Cache\NuGetPackages'
-    verbosityRestore: 'Normal'
     collectBuildInfo: true
     buildName: '$(Build.DefinitionName)'
     buildNumber: '$(Build.BuildNumber)'
-    includeEnvVars: true
