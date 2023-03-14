@@ -8,7 +8,7 @@ steps:
 - task: JFrogNuGet@1
   inputs:
     command: 'restore'
-    artifactoryConnection: 'hts2v2artifactory'
+    artifactoryConnection: 'hts2v2artifacgtory'
     targetResolveRepo: 'nuget-virtual'
     solutionPath: '**/*.sln'
     packagesDirectory: 'E:\Cache\NuGetPackages'
