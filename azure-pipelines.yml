@@ -5,6 +5,10 @@
 trigger:
 - main
 steps:
+- task: JFrogToolsInstaller@1
+  inputs:
+    artifactoryConnection: 'hts2v2artifacgtory'
+    cliInstallationRepo: 'jfrog-cli-v2-new'
 - task: CmdLine@2
   displayName: JFROG_CLI_LOG_LEVEL
   inputs:
