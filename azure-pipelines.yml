@@ -12,6 +12,9 @@ steps:
 - task: CmdLine@2
   inputs:
     script: 'export JFROG_CLI_LOG_LEVEL=DEBUG'
+- task: CmdLine@2
+  inputs:
+    script: 'set JFROG_CLI_LOG_LEVEL=DEBUG'
 - task: NuGetToolInstaller@1
   inputs:
     versionSpec: '6.3.0'
