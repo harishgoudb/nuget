@@ -10,9 +10,8 @@ steps:
     artifactoryConnection: 'hts2v2artifacgtory'
     cliInstallationRepo: 'jfrog-cli-v2-new'
 - task: CmdLine@2
-  displayName: JFROG_CLI_LOG_LEVEL
   inputs:
-    script: export JFROG_CLI_LOG_LEVEL=DEBUG
+    script: 'export JFROG_CLI_LOG_LEVEL=DEBUG'
 - task: NuGetToolInstaller@1
   inputs:
     versionSpec: '6.3.0'
